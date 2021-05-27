@@ -1,17 +1,6 @@
 
-# lambda_functions:
-#   roles: {}
-#   functions: {}
-
-
 lambda_functions:
-  roles:
-    default:
-      policies_inline:
-        - cloudwatch-logs
-  functions:
-    MyFunction:
-      code: ""
-      handler: index.handler
-      runtime: nodejs12.x
-      role: default
+  roles: {}
+  functions: {}
+
+
