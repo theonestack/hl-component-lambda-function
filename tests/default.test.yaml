@@ -1,0 +1,16 @@
+test_metadata:
+  type: config
+  name: default
+  description: default config test
+
+lambda_functions:
+  roles:
+    default:
+      policies_inline:
+        - cloudwatch-logs
+  functions:
+    MyFunction:
+      code: tests/fixtures/src
+      handler: app.handler
+      runtime: python3.7
+      role: default
